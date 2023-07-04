@@ -1,6 +1,6 @@
-# ClipperCard Usage Tracker
+# ClipperCard Usage API
 
-ClipperCard Usage Tracker is a Python application that interacts with the ClipperCard website to retrieve user transit usage data. It automatically logs in to the website, downloads the ride history, and converts it into an easy-to-analyze format.
+Clipper Card is the Bay Area transit card. There's no good API for pulling Clipper usage, so I've created a hackish one that uses Selenium. This interacts with the ClipperCard website to retrieve user transit usage data. It automatically logs in to the website, downloads the ride history, and converts it into an JSON record based format for clients to use.
 
 ## Application Structure
 
