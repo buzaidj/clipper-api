@@ -117,7 +117,9 @@ def login_and_retrieve_clipper(email, password):
             raise AssertionError("df should not be none, it should exit")
         return df
     finally:
-        driver.quit()
+        _driver = locals().get("driver", None)
+        if _driver is not None:
+            _driver.quit()
 
 
 def clipper_df_to_dict(df):

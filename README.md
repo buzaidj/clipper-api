@@ -1,6 +1,6 @@
 # ClipperCard Usage API
 
-Clipper Card is the Bay Area transit card. There's no good API for pulling Clipper usage, so I've created a hackish one that uses Selenium. This interacts with the ClipperCard website to retrieve user transit usage data. It automatically logs in to the website, downloads the ride history, and converts it into an JSON record based format for clients to use.
+Clipper Card is the Bay Area transit card. There's no good API for pulling Clipper usage, so I've created a hackish one that uses Selenium webdriver and some PDF parsing to parse the downloaded usage data. This interacts with the ClipperCard website to retrieve user transit usage data. It automatically logs in to the website, downloads the ride history, and converts it into an JSON record based format for clients to use.
 
 ## Application Structure
 
@@ -52,4 +52,4 @@ curl -X GET -H "Content-Type: application/json" -d '{"email":"myEmail@gmail.com"
 
 ## Notes
 
-Please be aware that the route only currently retrieves Clipper usage data for the most recently used card.
+Please be aware that the route only currently retrieves Clipper usage data for the most recently used card. I don't have it configured to download multiple PDF's at this time. That would involve 
