@@ -29,6 +29,7 @@ def login_and_retrieve_clipper(email, password):
         )  # Set MIME type for PDF
         # disable the built-in PDF viewer
         options.set_preference("pdfjs.disabled", False)
+        options.add_argument("--headless")
 
         driver = webdriver.Firefox(executable_path="./geckodriver", options=options)
         driver.get("https://www.clippercard.com/ClipperWeb/login.html")
