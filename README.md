@@ -52,4 +52,4 @@ curl -X GET -H "Content-Type: application/json" -d '{"email":"myEmail@gmail.com"
 
 ## Notes
 
-Please be aware that the route only currently retrieves Clipper usage data for the most recently used card. I don't have it configured to download multiple PDF's at this time. That would involve 
+Please be aware that the route only currently retrieves Clipper usage data for the most recently used card. I don't have it configured to download multiple PDF's at this time.
